@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="9c0ea19ac31c56104e8bbe13e40131a0" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="legal1" label="What needed" mandatory="true" max_length="40" name="u_what_needed" type="string">
             <choice>
                 <element inactive_on_update="false" label="Human Resources 1" sequence="0" value="hr1"/>
+                <element inactive_on_update="false" label="Other" sequence="8" value="Other"/>
                 <element inactive_on_update="false" label="Facilities 1" sequence="2" value="facilities1"/>
                 <element inactive_on_update="false" label="Legal 1" sequence="4" value="legal1"/>
                 <element inactive_on_update="false" label="Information Technology 1" sequence="6" value="it1"/>
